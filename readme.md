@@ -25,8 +25,10 @@ Vous pouvez facilement adapter le projet à votre histoire :
 - Modifiez les textes et les données selon vos envies
 - Dans la majorité des cas, il suffit d’éditer le fichier script.js présent dans chaque mini-projet
 - Astuce : un éditeur de code comme VS Code rendra les modifications plus confortables.
-❤️ Soutenir le projet
 
-Si ce projet vous a plu et que vous souhaitez me soutenir : 👉 paypal.me/philippegar
+❤️ Soutenir le projet
+- Si ce projet vous a plu et que vous souhaitez me soutenir : 👉 paypal.me/philippegar
+
 Merci et bonne Saint-Valentin 💕
+
 
