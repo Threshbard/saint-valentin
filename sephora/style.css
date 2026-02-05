@@ -1,0 +1,130 @@
+:root {
+  --bg1: #0f1020;
+  --bg2: #1a1c3a;
+  --accent: #ff4d8d;
+  --accent2: #ffcc70;
+  --text: #fcf8fb;
+  --card: rgba(255, 255, 255, 0.08);
+  --border: rgba(255, 255, 255, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(
+      900px 500px at 20% 0%,
+      rgba(255, 77, 141, 0.25),
+      transparent 55%
+    ),
+    radial-gradient(
+      900px 500px at 80% 20%,
+      rgba(255, 204, 112, 0.18),
+      transparent 55%
+    ),
+    linear-gradient(135deg, var(--bg1), var(--bg2));
+  color: var(--text);
+  overflow: hidden;
+}
+
+.container {
+  background: linear-gradient(180deg, var(--card), rgba(255, 255, 255, 0.04));
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 26px;
+  width: min(94vw, 420px);
+  text-align: center;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.puzzle {
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  width: 300px;
+  height: 300px;
+}
+
+.slot {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.piece {
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  background-image: url("image.jpg");
+  background-size: 300px 300px;
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  user-select: none;
+}
+
+.piece.correct {
+  cursor: default;
+}
+
+.piece span {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.piece.correct span {
+  opacity: 1;
+}
+
+.final {
+  display: none;
+  margin-top: 18px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.final.show {
+  display: block;
+}
+
+/* ❤️ Cœurs animés */
+.heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 20px;
+  animation: floatUp 4s linear forwards;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-110vh);
+    opacity: 0;
+  }
+}
+
+.piece.correct span {
+  opacity: 1;
+  color: #ff00a2; /* jaune doré */
+}

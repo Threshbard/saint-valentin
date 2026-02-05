@@ -1,0 +1,112 @@
+:root {
+  --bg1: #0f1020;
+  --bg2: #1a1c3a;
+  --accent: #ff4d8d;
+  --text: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--bg1), var(--bg2));
+  color: var(--text);
+  overflow: hidden;
+}
+
+.game {
+  width: 360px;
+  height: 520px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+}
+
+.hud {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 14px;
+}
+
+.player {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  transition: left 0.1s;
+}
+
+.heart {
+  position: absolute;
+  top: -40px;
+  font-size: 26px;
+  animation: fall linear;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(560px);
+  }
+}
+
+.end {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #ff4d8d, #ff8fb1);
+  color: #111;
+  display: none;
+  place-items: center;
+  text-align: center;
+  padding: 24px;
+}
+
+.end.show {
+  display: grid;
+}
+
+.end h1 {
+  margin-bottom: 10px;
+}
+
+.btns {
+  display: flex;
+  gap: 14px;
+  margin-top: 16px;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.yes {
+  background: #111;
+  color: white;
+}
+
+.no {
+  background: white;
+}
+
+.end.show {
+  pointer-events: all;
+  z-index: 10;
+}
+
+.game > :not(.end) {
+  pointer-events: none;
+}

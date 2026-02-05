@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Surprises ❤️</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <header class="intro">
+        <h1>J’ai préparé plusieurs surprises pour toi 💖</h1>
+        <p>
+          Mais pour les découvrir, tu devras résoudre
+          <strong>7 énigmes</strong>.
+        </p>
+      </header>
+
+      <section class="rules">
+        <p>🔍 Chaque énigme correspond à un <strong>mot clé secret</strong>.</p>
+        <p>Quand tu penses l’avoir trouvé, entre-le ci-dessous :</p>
+      </section>
+
+      <section class="game">
+        <h2>🔐 Entrer un mot clé</h2>
+
+        <div class="input-group">
+          <input
+            type="text"
+            id="keyword"
+            placeholder="Entre le mot clé ici..."
+          />
+          <button onclick="checkKeyword()">Valider</button>
+        </div>
+
+        <p id="feedback"></p>
+      </section>
+
+      <section class="riddles">
+        <h2>🧩 Les énigmes</h2>
+
+        <div class="riddle">
+          <h3>Mot n°1</h3>
+          <p class="hint">
+            « C'est la première compagnie aérienne qu'on a pris ensemble »
+          </p>
+        </div>
+
+        <div class="riddle">
+          <h3>Mot n°2</h3>
+          <p class="hint">
+            « C'est le prénom de mon animateur préféré ces vacances ! »
+          </p>
+        </div>
+
+        <div class="riddle">
+          <h3>Mot n°3</h3>
+          <p class="hint">
+            « Le premier cadeau que je t'ai offert était de quelle marque ? »
+          </p>
+        </div>
+
+        <div class="riddle">
+          <h3>Mot n°4</h3>
+          <p class="hint">« Tu ris toujours quand je l'imite »</p>
+        </div>
+
+        <div class="riddle">
+          <h3>Mot n°5</h3>
+          <p class="hint">
+            « Riz assaisonné accompagné de lamelles de poisson cru »
+          </p>
+        </div>
+
+        <div class="riddle">
+          <h3>Mot n°6</h3>
+          <p class="hint">« C'est ta fleur préférée »</p>
+        </div>
+
+        <div class="riddle">
+          <h3>Mot n°7</h3>
+          <p class="hint">« C'est mon plat préféré »</p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>Bonne chance mon amour ❤️</p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="../favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="../favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Serrure</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <h1>🔒 Serrure électrique</h1>
+      <p class="hint">Entre 6 chiffres. Indice : mon tel 😉</p>
+
+      <div class="lock">
+        <div class="display" id="display" aria-label="Affichage du code">
+          <span class="cell">_</span><span class="cell">_</span
+          ><span class="cell">_</span> <span class="cell">_</span
+          ><span class="cell">_</span><span class="cell">_</span>
+        </div>
+
+        <div class="actions">
+          <button class="btn ghost" id="clearBtn" type="button">Effacer</button>
+        </div>
+      </div>
+
+      <section class="keypad" aria-label="Clavier numérique">
+        <button class="key" data-digit="1">1</button>
+        <button class="key" data-digit="2">2</button>
+        <button class="key" data-digit="3">3</button>
+        <button class="key" data-digit="4">4</button>
+        <button class="key" data-digit="5">5</button>
+        <button class="key" data-digit="6">6</button>
+        <button class="key" data-digit="7">7</button>
+        <button class="key" data-digit="8">8</button>
+        <button class="key" data-digit="9">9</button>
+
+        <div class="spacer"></div>
+        <button class="key" data-digit="0">0</button>
+        <div class="spacer"></div>
+      </section>
+
+      <section class="audioArea" id="audioArea" hidden>
+        <p class="success">✅ Accès accordé.</p>
+
+        <!-- On l’affiche seulement après le code -->
+        <audio id="player" src="music.mp3" controls preload="auto"></audio>
+
+        <p class="small">Clique sur le lecteur pour démarrer la musique.</p>
+        <button class="btn lyricsBtn" id="lyricsBtn" type="button">
+          📜 Afficher les paroles
+        </button>
+
+        <div class="lyrics" id="lyrics" hidden>
+          <p>
+            D'accord, il existait<br />
+            D'autres façons de se quitter<br />
+            Quelques éclats de verre<br />
+            Auraient peut-être pu nous aider<br />
+            Dans ce silence amer<br />
+            J'ai décidé de pardonner<br />
+            Les erreurs qu'on peut faire<br />
+            À trop s'aimer<br /><br />
+
+            D'accord, la petite fille<br />
+            En moi souvent te réclamait<br />
+            Presque comme une mère<br />
+            Tu me bordais, me protégeais<br />
+            Je t'ai volé ce sang<br />
+            Qu'on aurait pas dû partager<br />
+            À bout de mots, de rêves<br />
+            Je vais crier<br /><br />
+
+            Je t'aime, je t'aime<br />
+            Comme un fou, comme un soldat<br />
+            Comme une star de cinéma<br />
+            Je t'aime, je t'aime<br />
+            Comme un loup, comme un roi<br />
+            Comme un homme que je ne suis pas<br />
+            Tu vois, je t'aime comme ça<br /><br />
+
+            D'accord je t'ai confié<br />
+            Tous mes sourires, tous mes secrets<br />
+            Même ceux dont seul un frère<br />
+            Est le gardien inavoué<br />
+            Dans cette maison de pierre<br />
+            Satan nous regardait danser<br />
+            J'ai tant voulu la guerre<br />
+            De corps qui se faisaient la paix<br /><br />
+
+            Je t'aime, je t'aime<br />
+            Comme un fou, comme un soldat<br />
+            Comme une star de cinéma<br />
+            Je t'aime, je t'aime<br />
+            Comme un loup, comme un roi<br />
+            Comme un homme que je ne suis pas<br />
+            Tu vois, je t'aime comme ça<br /><br />
+
+            Je t'aime, je t'aime<br />
+            Comme un fou, comme un soldat<br />
+            Comme une star de cinéma<br />
+            Je t'aime, je t'aime, je t'aime, je t'aime, je t'aime, je t'aime<br />
+            Comme un loup, comme un roi<br />
+            Comme un homme que je ne suis pas<br />
+            Tu vois, je t'aime comme ça, ouuh<br />
+            Tu vois, je t'aime comme ça<br />
+          </p>
+        </div>
+      </section>
+      <div class="divError">
+        <p id="error" class="error" hidden>❌ Accès refusé</p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
