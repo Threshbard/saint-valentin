@@ -12,6 +12,7 @@ Pour y accéder, votre partenaire devra trouver 7 mots cachés à l’aide d’i
 - Mot 5 : sushi
 - Mot 6 : rose
 - Mot 7 : lasagnes
+  Ces mots peuvent être modifiés en changeant le script et html à la source du projet (éditeur de code nécessaire) et en renommant le(s) dossier(s) concernés.
 
 🚀 Comment accéder au projet ?
 - Téléchargez le projet saint-valentin
@@ -30,5 +31,6 @@ Vous pouvez facilement adapter le projet à votre histoire :
 - Si ce projet vous a plu et que vous souhaitez me soutenir : 👉 paypal.me/philippegar
 
 Merci et bonne Saint-Valentin 💕
+
 
 
